@@ -1,0 +1,33 @@
+@host = https://localhost:7045
+
+### Create a product
+POST {{host}}/api/products
+Content-Type: application/json
+
+{
+  "name": "Wireless Mouse",
+  "description": "2.4GHz ergonomic mouse",
+  "price": 599.00,
+  "stock": 25
+}
+
+### Get all products
+GET {{host}}/api/products
+
+### Get one product
+GET {{host}}/api/products/1
+
+### Update product
+PUT {{host}}/api/products/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Wireless Mouse Pro",
+  "description": "Updated description",
+  "price": 699.00,
+  "stock": 30
+}
+
+### Delete product
+DELETE {{host}}/api/products/1
