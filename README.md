@@ -13,6 +13,7 @@ A product catalog REST API built with ASP.NET Core Web API and Entity Framework 
 - Async/await database operations
 - Dependency injection (`AppDbContext` injected into the controller)
 - Proper HTTP status codes (200, 201, 204, 400, 404)
+-    - MVC web interface with Razor Views (product list and add-product form)
 
 ## API Endpoints
 | Method | Endpoint | Description |
@@ -25,11 +26,10 @@ A product catalog REST API built with ASP.NET Core Web API and Entity Framework 
 
 ## Run Locally
 1. Clone the repository
-2. Open `ShopEasy.sln` in Visual Studio
+2. Open `ShopEasy.slnx` in Visual Studio
 3. In the Package Manager Console, run `Update-Database`
 4. Press F5 and open `https://localhost:7045/api/products`
 
 ## Roadmap
-- MVC front end with Razor Views
 - JWT authentication
 - Cart and orders
